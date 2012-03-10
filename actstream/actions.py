@@ -34,7 +34,7 @@ def follow(user, actor, send_action=True):
     return follow
 
 
-def unfollow(user, actor, send_action=False):
+def unfollow(user, actor, send_action=True):
     """
     Removes ``User`` -> ``Actor`` follow relationship.
     Optionally sends the ``<user> stopped following <actor>`` action signal.
